@@ -1,0 +1,55 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: palette.$dark-blue;
+  color: palette.$white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1500px;
+    padding: 15px 0;
+
+    &__logo {
+      position: relative;
+      font-size: 25px;
+      color: #ededed;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__nav {
+      display: flex;
+      gap: 40px;
+      font-size: 17px;
+      text-decoration: none;
+      font-weight: 500;
+
+      &__item {
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          color: palette.$light-blue;
+        }
+      }
+    }
+  }
+}

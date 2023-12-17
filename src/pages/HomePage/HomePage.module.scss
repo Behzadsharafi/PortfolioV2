@@ -1,0 +1,21 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+
+.homePage {
+  display: flex;
+  background: palette.$dark-blue;
+  color: palette.$white;
+  padding: 70px 0 0 0;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 1500px;
+    margin-top: 200px;
+  }
+}
