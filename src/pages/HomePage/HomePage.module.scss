@@ -9,6 +9,9 @@
   flex-grow: 1;
   width: 100%;
   justify-content: center;
+  position: relative;
+  justify-content: center;
+  perspective: 850px;
 
   &__content {
     display: flex;
@@ -17,5 +20,146 @@
     width: 90%;
     max-width: 1500px;
     margin-top: 200px;
+
+    &__heading {
+      position: relative;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.2;
+      width: max-content;
+
+      @include mixins.typewriter-animation(
+        12,
+        1.5s,
+        0.3s,
+        0.1s,
+        1.8s,
+        forwards
+      );
+      @include mixins.desktop_sm {
+        font-size: 46px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.tablet {
+        font-size: 36px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone {
+        font-size: 24px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_sm {
+        font-size: 20px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_xsm {
+        font-size: 16px;
+        transition: font-size 0.5s ease;
+      }
+    }
+
+    &__para1 {
+      position: relative;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.2;
+      width: max-content;
+
+      @include mixins.typewriter-animation(22, 2.75s, 2s, 2s, 2.75s, forwards);
+
+      @include mixins.desktop_sm {
+        font-size: 46px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.tablet {
+        font-size: 34px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone {
+        font-size: 24px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_sm {
+        font-size: 20px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_xsm {
+        font-size: 16px;
+        transition: font-size 0.5s ease;
+      }
+    }
+
+    &__para2 {
+      position: relative;
+      font-size: 32px;
+      font-weight: 700;
+      color: palette.$light-blue;
+      width: max-content;
+
+      @include mixins.typewriter-animation(20, 2.9s, 5s, 5s, 2.9s, forwards);
+
+      @include mixins.tablet {
+        font-size: 24px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone {
+        font-size: 20px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_sm {
+        font-size: 18px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_xsm {
+        font-size: 16px;
+        transition: font-size 0.5s ease;
+      }
+    }
+    &__para3 {
+      position: relative;
+      font-size: 25px;
+      margin: 20px 0 40px;
+      width: max-content;
+
+      @include mixins.typewriter-animation(
+        22,
+        2.75s,
+        8.85s,
+        8.85s,
+        0.9s,
+        infinite
+      );
+
+      @include mixins.tablet {
+        font-size: 22px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone {
+        font-size: 20px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_sm {
+        font-size: 18px;
+        transition: font-size 0.5s ease;
+      }
+
+      @include mixins.phone_xsm {
+        font-size: 16px;
+        transition: font-size 0.5s ease;
+      }
+    }
   }
 }

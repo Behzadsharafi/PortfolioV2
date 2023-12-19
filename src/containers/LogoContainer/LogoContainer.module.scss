@@ -1,0 +1,17 @@
+.canvas {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(
+    ellipse,
+    rgb(64, 22, 143) 0%,
+    rgb(32, 14, 96) 40%,
+    rgb(10, 0, 34) 100%
+  );
+  perspective: 850px;
+}

@@ -3,6 +3,8 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import HomePage from "./pages/HomePage/HomePage";
 import styles from "./App.module.scss";
+import Cube from "./components/Cube/Cube";
+import LogoContainer from "./containers/LogoContainer/LogoContainer";
 
 function App() {
   return (
