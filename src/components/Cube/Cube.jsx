@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Cube.module.scss";
 
-const Cube = ({ size, bottom, left, rotationSpeed, icon }) => {
-  const [rotation, setRotation] = useState({ x: 0, y: 0 });
+const Cube = ({ size, bottom, left, rotationSpeed, icon, initialRotation }) => {
+  const [rotation, setRotation] = useState({
+    x: initialRotation,
+    y: initialRotation,
+  });
+  const [mouseMoveTimer, setMouseMoveTimer] = useState(0);
 
   const cubeRef = useRef(null);
 
@@ -22,6 +26,7 @@ const Cube = ({ size, bottom, left, rotationSpeed, icon }) => {
       y = -y * rotationSpeed;
 
       setRotation({ x, y });
+      setMouseMoveTimer(0);
     }
   };
 
@@ -40,11 +45,12 @@ const Cube = ({ size, bottom, left, rotationSpeed, icon }) => {
     const interval = setInterval(() => {
       // Simulate automatic motion when there's no user interaction
       setRotation((prevRotation) => ({
-        x: prevRotation.x + 0.5, // Adjust the rotation speed as needed
-        y: prevRotation.y + 0.5, // Adjust the rotation speed as needed
+        x: (prevRotation.x + 0.5) % 360, // Adjust the rotation speed as needed
+        y: (prevRotation.y + 0.5) % 360, // Adjust the rotation speed as needed
       }));
-    }, 30);
 
+      setMouseMoveTimer((prevTimer) => prevTimer + 0.05);
+    }, 50);
     return () => {
       document.removeEventListener("mousemove", mousemoveListener);
       document.removeEventListener("touchmove", touchmoveListener);
@@ -52,11 +58,19 @@ const Cube = ({ size, bottom, left, rotationSpeed, icon }) => {
     };
   }, []);
 
+  const getTransition = () => {
+    if (mouseMoveTimer >= 1) {
+      return `none`;
+    }
+    return `all 0.6s ease-out`;
+  };
+
   return (
     <div
       className={styles.cube}
       style={{
         transform: `rotateY(${rotation.x}deg) rotateX(${rotation.y}deg)`,
+        transition: getTransition(),
         bottom: window.innerHeight * bottom,
         left: window.innerWidth * left,
         height: size + window.innerWidth * 0.03,
