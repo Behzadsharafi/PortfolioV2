@@ -9,11 +9,16 @@ const Header = () => {
     setShowNav(!showNav);
   };
 
+  const navStyle =
+    showNav === true
+      ? `${styles.header__content__nav}`
+      : `${styles.header__content__nav} ${styles.header__content__nav__isActive}`;
+
   return (
     <header className={styles.header}>
       <div className={styles.header__content}>
         <section className={styles.header__content__logo}>ZAD.</section>
-        <nav className={styles.header__content__nav}>
+        <nav className={navStyle}>
           <li className={styles.header__content__nav__item}>Home</li>
           <li className={styles.header__content__nav__item}>About</li>
           <li className={styles.header__content__nav__item}>Projects</li>
