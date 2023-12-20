@@ -1,7 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Cube.module.scss";
 
-const Cube = ({ size, bottom, left, rotationSpeed, icon, initialRotation }) => {
+const Cube = ({
+  size = 50,
+  bottom,
+  left,
+  rotationSpeed = 0.2,
+  icon,
+  initialRotation,
+}) => {
   const [rotation, setRotation] = useState({
     x: initialRotation,
     y: initialRotation,
@@ -28,6 +35,7 @@ const Cube = ({ size, bottom, left, rotationSpeed, icon, initialRotation }) => {
       setRotation({ x, y });
       setMouseMoveTimer(0);
     }
+    // cubeRef.current.style.transition = "all 0.6s ease-out";
   };
 
   useEffect(() => {
@@ -42,28 +50,40 @@ const Cube = ({ size, bottom, left, rotationSpeed, icon, initialRotation }) => {
     document.addEventListener("mousemove", mousemoveListener);
     document.addEventListener("touchmove", touchmoveListener);
 
-    const interval = setInterval(() => {
-      // Simulate automatic motion when there's no user interaction
-      setRotation((prevRotation) => ({
-        x: (prevRotation.x + 0.5) % 360, // Adjust the rotation speed as needed
-        y: (prevRotation.y + 0.5) % 360, // Adjust the rotation speed as needed
-      }));
-
-      setMouseMoveTimer((prevTimer) => prevTimer + 0.05);
-    }, 50);
     return () => {
       document.removeEventListener("mousemove", mousemoveListener);
       document.removeEventListener("touchmove", touchmoveListener);
-      clearInterval(interval);
     };
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Simulate automatic motion when there's no user interaction
+      if (mouseMoveTimer >= 1) {
+        setRotation((prevRotation) => ({
+          x: (prevRotation.x + 0.5) % 360, // Adjust the rotation speed as needed
+          y: (prevRotation.y + 0.5) % 360, // Adjust the rotation speed as needed
+        }));
+      }
+
+      setMouseMoveTimer((prevTimer) => prevTimer + 0.05);
+    }, 30);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [mouseMoveTimer]);
+
   const getTransition = () => {
-    if (mouseMoveTimer >= 1) {
+    if (mouseMoveTimer >= 0.9) {
       return `none`;
     }
     return `all 0.6s ease-out`;
   };
+
+  // useEffect(() => {
+  //   console.log(rotation);
+  // }, [rotation]);
 
   return (
     <div
