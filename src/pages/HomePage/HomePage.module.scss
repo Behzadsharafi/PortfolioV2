@@ -25,8 +25,9 @@
 
     &__heading {
       position: relative;
-      font-size: 56px;
-      font-weight: 700;
+      // font-size: 30px;
+      font-size: clamp(16px, 2vw + 0.5rem, 25px);
+      font-weight: 600;
       line-height: 1.2;
       width: max-content;
 
@@ -38,99 +39,99 @@
         1.8s,
         forwards
       );
-      @include mixins.desktop_sm {
-        font-size: 46px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.desktop_sm {
+      //   font-size: 26px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.tablet {
-        font-size: 36px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.tablet {
+      //   font-size: 24px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone {
-        font-size: 24px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone {
+      //   font-size: 22px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_sm {
-        font-size: 20px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_sm {
+      //   font-size: 20px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_xsm {
-        font-size: 16px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_xsm {
+      //   font-size: 16px;
+      //   transition: font-size 0.5s ease;
+      // }
     }
 
     &__para1 {
       position: relative;
-      font-size: 56px;
+      font-size: clamp(20px, 4vw + 0.5rem, 52px);
       font-weight: 700;
       line-height: 1.2;
       width: max-content;
 
       @include mixins.typewriter-animation(22, 2.75s, 2s, 2s, 2.75s, forwards);
 
-      @include mixins.desktop_sm {
-        font-size: 46px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.desktop_sm {
+      //   font-size: 46px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.tablet {
-        font-size: 34px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.tablet {
+      //   font-size: 34px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone {
-        font-size: 24px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone {
+      //   font-size: 24px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_sm {
-        font-size: 20px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_sm {
+      //   font-size: 20px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_xsm {
-        font-size: 16px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_xsm {
+      //   font-size: 16px;
+      //   transition: font-size 0.5s ease;
+      // }
     }
 
     &__para2 {
       position: relative;
-      font-size: 32px;
+      font-size: clamp(18px, 2.5vw + 0.5rem, 36px);
       font-weight: 700;
       color: palette.$light-blue;
       width: max-content;
 
       @include mixins.typewriter-animation(20, 2.9s, 5s, 5s, 2.9s, forwards);
 
-      @include mixins.tablet {
-        font-size: 24px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.tablet {
+      //   font-size: 24px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone {
-        font-size: 20px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone {
+      //   font-size: 20px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_sm {
-        font-size: 18px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_sm {
+      //   font-size: 18px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_xsm {
-        font-size: 16px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_xsm {
+      //   font-size: 16px;
+      //   transition: font-size 0.5s ease;
+      // }
     }
     &__para3 {
       position: relative;
-      font-size: 25px;
+      font-size: clamp(16px, 1.4vw + 0.5rem, 25px);
       margin: 20px 0 40px;
       width: max-content;
 
@@ -143,25 +144,25 @@
         infinite
       );
 
-      @include mixins.tablet {
-        font-size: 22px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.tablet {
+      //   font-size: 22px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone {
-        font-size: 20px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone {
+      //   font-size: 20px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_sm {
-        font-size: 18px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_sm {
+      //   font-size: 18px;
+      //   transition: font-size 0.5s ease;
+      // }
 
-      @include mixins.phone_xsm {
-        font-size: 16px;
-        transition: font-size 0.5s ease;
-      }
+      // @include mixins.phone_xsm {
+      //   font-size: 16px;
+      //   transition: font-size 0.5s ease;
+      // }
     }
   }
 }
