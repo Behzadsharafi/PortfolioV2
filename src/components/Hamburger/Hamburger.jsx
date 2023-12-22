@@ -1,16 +1,15 @@
 import { useState } from "react";
 import styles from "./Hamburger.module.scss";
 
-const Hamburger = ({ onClick }) => {
-  const [isActive, setIsActive] = useState(false);
+const Hamburger = ({ showNav, setShowNav }) => {
+  // const [isActive, setIsActive] = useState(false);
 
   const handleClick = () => {
-    setIsActive(!isActive);
-    onClick();
+    setShowNav(!showNav);
   };
 
   const hamburgerStyle =
-    isActive === false
+    showNav === true
       ? `${styles.hamburger}`
       : `${styles.hamburger} ${styles.hamburger__isActive}`;
 

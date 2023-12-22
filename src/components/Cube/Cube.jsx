@@ -81,10 +81,6 @@ const Cube = ({
     return `all 0.6s ease-out`;
   };
 
-  // useEffect(() => {
-  //   console.log(rotation);
-  // }, [rotation]);
-
   return (
     <div
       className={styles.cube}

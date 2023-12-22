@@ -1,0 +1,76 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+@use "../../partials/breakpoints";
+
+.aboutPage {
+  display: flex;
+  background: palette.$dark-blue;
+  color: palette.$white;
+  padding: 70px 0 0 0;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  justify-content: center;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 1.5s ease forwards;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+    max-width: 1500px;
+    margin-top: 50px;
+
+    &__bio {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &__heading {
+        font-size: 35px;
+      }
+
+      &__paragraph {
+        color: palette.$grey;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      &__tabs {
+        display: flex;
+        gap: 30px;
+        justify-content: baseline;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 700;
+
+        &__title {
+          cursor: pointer;
+        }
+      }
+
+      &__details {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

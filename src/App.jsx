@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import styles from "./App.module.scss";
 import Cube from "./components/Cube/Cube";
 import LogoContainer from "./containers/LogoContainer/LogoContainer";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
         <Footer />
       </div>

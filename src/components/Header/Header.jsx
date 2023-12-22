@@ -1,9 +1,11 @@
 import styles from "./Header.module.scss";
 import Hamburger from "./../Hamburger/Hamburger";
-import { useRef, useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(true);
+  const navigate = useNavigate();
 
   const toggleShowNav = () => {
     setShowNav(!showNav);
@@ -17,14 +19,35 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.header__content}>
-        <section className={styles.header__content__logo}>ZAD.</section>
+        <span
+          className={styles.header__content__logo}
+          onClick={() => navigate("/")}
+        >
+          ZAD.
+        </span>
         <nav className={navStyle}>
-          <li className={styles.header__content__nav__item}>Home</li>
-          <li className={styles.header__content__nav__item}>About</li>
+          <li
+            className={styles.header__content__nav__item}
+            onClick={() => {
+              navigate("/");
+              setShowNav(!showNav);
+            }}
+          >
+            Home
+          </li>
+          <li
+            className={styles.header__content__nav__item}
+            onClick={() => {
+              navigate("/about");
+              setShowNav(!showNav);
+            }}
+          >
+            About
+          </li>
           <li className={styles.header__content__nav__item}>Projects</li>
           <li className={styles.header__content__nav__item}>Contact</li>
         </nav>
-        <Hamburger onClick={toggleShowNav} />
+        <Hamburger showNav={showNav} setShowNav={setShowNav} />
       </div>
     </header>
   );

@@ -1,5 +1,6 @@
 @use "../../partials/palette";
 @use "../../partials/mixins";
+@use "../../partials/breakpoints";
 
 .header {
   position: fixed;

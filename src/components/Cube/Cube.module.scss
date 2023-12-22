@@ -9,7 +9,8 @@
   // height: 100px;
   transform-origin: 50% 50% 150px;
   transform-style: preserve-3d;
-  // transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 0.2;
 }
 
 .cube .face {
