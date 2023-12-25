@@ -9,7 +9,7 @@ const Hamburger = ({ showNav, setShowNav }) => {
   };
 
   const hamburgerStyle =
-    showNav === true
+    showNav === false
       ? `${styles.hamburger}`
       : `${styles.hamburger} ${styles.hamburger__isActive}`;
 

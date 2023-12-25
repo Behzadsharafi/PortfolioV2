@@ -48,6 +48,10 @@
       line-height: 1.2;
       width: max-content;
 
+      & span {
+        color: grey;
+      }
+
       @include mixins.typewriter-animation(22, 2.75s, 2s, 2s, 2.75s, forwards);
     }
 

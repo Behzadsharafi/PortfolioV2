@@ -11,6 +11,40 @@ body {
   background: palette.$dark-blue;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #485670 palette.$dark-blue;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+
+    &-thumb {
+      background-color: #485670;
+      border-radius: 5px;
+    }
+
+    &-track {
+      background-color: palette.$dark-blue;
+
+      &:hover {
+        background-color: none;
+      }
+    }
+  }
+}
+
+// html::-webkit-scrollbar {
+// }
+
+html::-webkit-scrollbar-thumb {
+}
+
+html::-webkit-scrollbar-track {
+}
+
+html::-webkit-scrollbar-track:hover {
+}
+
 /* a {
   font-weight: 500;
   color: #646cff;

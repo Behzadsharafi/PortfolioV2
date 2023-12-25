@@ -10,7 +10,10 @@
   align-items: center;
   justify-content: center;
   padding-top: 40px;
-  z-index: -1;
+
+  @include mixins.phone {
+    padding-top: 40px;
+  }
 
   &__content {
     display: flex;
