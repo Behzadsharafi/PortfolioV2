@@ -2,51 +2,44 @@ import styles from "./Project.module.scss";
 
 import googleBooksIcon from "../../assets/googleBooks.png";
 
-const Project = () => {
+const Project = ({ project }) => {
   return (
     <article className={styles.project}>
-      <svg className={styles.svg}>
-        <defs>
-          <filter id="noise">
-            <feTurbulence
-              baseFrequency="0.7,0.8"
-              numOctaves="1"
-              seed="0"
-              type="fractalNoise"
-              result="static"
-            >
-              <animate
-                attributeName="seed"
-                values="0;100"
-                dur="80ms"
-                repeatCount="5"
-                begin="card.mouseenter"
-              />
-            </feTurbulence>
-            <feDisplacementMap in="SourceGraphic" in2="static">
-              <animate
-                attributeName="scale"
-                values="0;40;0"
-                dur="80ms"
-                repeatCount="5"
-                begin="card.mouseenter"
-              />
-            </feDisplacementMap>
-          </filter>
-        </defs>
-      </svg>
       <div className={styles.project__details}>
-        <h2 className={styles.project__details__title}>Zad Books</h2>
+        <div className={styles.project__details__heading}>
+          <h2 className={styles.project__details__heading__featured}>
+            Featured Project
+          </h2>
+          <h2 className={styles.project__details__heading__title}>
+            {project.title}
+          </h2>
+        </div>
+
         <p className={styles.project__details__description}>
-          A platform that enables the users to search for books and get more
-          details about a certain title. I used React.JS and SCSS for front-end
-          and utilized google books API as the backend.
+          {project.description}
         </p>
+        <ul className={styles.project__details__techStack}>
+          {project.techStack.map((tech) => (
+            <li>{tech} </li>
+          ))}
+        </ul>
+        <ul className={styles.project__details__links}>
+          <li>
+            <a href={project.liveSite} target="_blank">
+              <i className="bx bx-link-external"></i>
+            </a>
+          </li>
+          <li>
+            <a href={project.gitHub} target="_blank">
+              <i className="bx bxl-github"></i>
+            </a>
+          </li>
+        </ul>
       </div>
       <div id="card" className={styles.project__imageContainer}>
         <img
-          src={googleBooksIcon}
-          alt=""
+          src={project.imageLink}
+          alt={`${project.title} image`}
           className={styles.project__imageContainer__image}
         />
       </div>

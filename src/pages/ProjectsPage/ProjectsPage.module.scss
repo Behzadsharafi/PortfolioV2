@@ -16,14 +16,23 @@
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 1.5s ease forwards;
+  padding-bottom: 100px;
 
   &__content {
     display: flex;
     flex-direction: column;
     gap: 250px;
-    width: 90%;
+    width: 70%;
     max-width: 900px;
     margin-top: 50px;
+
+    @include mixins.desktop_sm {
+      width: 80%;
+    }
+
+    @include mixins.tablet {
+      width: 88%;
+    }
   }
 }
 
