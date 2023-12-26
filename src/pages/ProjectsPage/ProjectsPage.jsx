@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { ActiveTabContext } from "../../context/ActiveTabContextProvider";
 import zadBooksIcon from "../../assets/googleBooks.png";
 import zadFashionIcon from "../../assets/zadFashion.png";
+import windowsXPIcon from "../../assets/windowsXP.png";
 
 const ProjectsPage = () => {
   const { setActiveTab } = useContext(ActiveTabContext);
@@ -25,7 +26,7 @@ const ProjectsPage = () => {
     {
       title: "Zad Fashion",
       description:
-        "A clothing e-shop full stack website developed in React.JS, SCSS, with Google Firestore realtime integration.",
+        "A clothing e-shop full stack website developed in React.JS, SCSS, with Google Firestore realtime integration. The website showcases essential features such as a user-friendly shopping cart, a personalized list of favorite items, and detailed product pages providing more information about each item. ",
       techStack: ["ReactJS", "SCSS", "Google Firestore"],
       imageLink: zadFashionIcon,
       gitHub: "https://github.com/Behzadsharafi/React-eShop",
@@ -34,9 +35,9 @@ const ProjectsPage = () => {
     {
       title: "Fake Windows XP",
       description:
-        "This is a simulation of Windows XP user interface to exhibit my vanilla JavaScript, HTML, and CSS abilities. There is a start menu and 3 applications that the user can choose from. My focus in this project was on the UI, therefore some buttons and icons are merely placeholders and do not hav functionality.",
+        "This is a simulation of Windows XP user interface to exhibit my vanilla JavaScript, HTML, and CSS abilities. There is a start menu and 3 applications that the user can choose from. My focus in this project was on the UI, therefore some buttons and icons are merely placeholders and do not have functionality.",
       techStack: ["HTML", "CSS", "JavaScript"],
-      imageLink: zadFashionIcon,
+      imageLink: windowsXPIcon,
       gitHub: "https://github.com/Behzadsharafi/FakeOS",
       liveSite: "https://fakewinxp.netlify.app/",
     },
@@ -45,9 +46,14 @@ const ProjectsPage = () => {
   return (
     <main className={styles.projectsPage}>
       <div className={styles.projectsPage__content}>
-        {projects.map((project) => (
-          <Project project={project} />
-        ))}
+        <h2 className={styles.projectsPage__content__heading}>
+          Some Of My Projects
+        </h2>
+        <ul className={styles.projectsPage__content__projectList}>
+          {projects.map((project, index) => (
+            <Project index={index} key={index} project={project} />
+          ))}
+        </ul>
       </div>
     </main>
   );
