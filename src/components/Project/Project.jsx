@@ -3,6 +3,10 @@ import styles from "./Project.module.scss";
 import googleBooksIcon from "../../assets/googleBooks.png";
 
 const Project = ({ project, index }) => {
+  const handleClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <article
       className={
@@ -28,7 +32,10 @@ const Project = ({ project, index }) => {
           <h2 className={styles.project__details__heading__featured}>
             Featured Project
           </h2>
-          <h2 className={styles.project__details__heading__title}>
+          <h2
+            onClick={() => handleClick(project.liveSite)}
+            className={styles.project__details__heading__title}
+          >
             {project.title}
           </h2>
         </div>
@@ -61,6 +68,7 @@ const Project = ({ project, index }) => {
         </ul>
       </div>
       <div
+        onClick={() => handleClick(project.liveSite)}
         id="card"
         className={
           index % 2 === 1

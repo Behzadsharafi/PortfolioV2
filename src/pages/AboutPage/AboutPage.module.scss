@@ -11,8 +11,6 @@
   width: 100%;
   justify-content: center;
   position: relative;
-  justify-content: center;
-  overflow: hidden;
   opacity: 0;
   transform: translateY(3rem);
   animation: fadeInUp 1.5s ease forwards;
@@ -21,8 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    // width: 90%;
-    // max-width: 1500px;
     margin-top: 50px;
     width: 70%;
     max-width: 1000px;
@@ -41,6 +37,8 @@
 
       &__heading {
         font-size: 35px;
+        font-weight: 700;
+        font-size: clamp(22px, 4vw + 0.5rem, 35px);
       }
 
       &__paragraph {

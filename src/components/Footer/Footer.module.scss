@@ -27,6 +27,13 @@
     &__links {
       display: flex;
       gap: 10px;
+
+      &__button {
+        border-radius: 50%;
+        font-size: 16px;
+        height: 35px;
+        width: 35px;
+      }
     }
 
     &__copyright {
