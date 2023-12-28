@@ -18,9 +18,13 @@ import githubIcon from "../assets/github.svg";
 import nologyIcon from "../assets/_nology.png";
 import digiKalaIcon from "../assets/Digikala.png";
 import kntuIcon from "../assets/KNTUniversity.png";
-import zadBooksIcon from "../assets/googleBooks.png";
-import zadFashionIcon from "../assets/zadFashion.png";
-import windowsXPIcon from "../assets/windowsXP.png";
+import zadBooksImage from "../assets/googleBooks.png";
+import zadFashionImage from "../assets/zadFashion.png";
+import windowsXPImage from "../assets/windowsXP.png";
+import morseTranslatorImage from "../assets/morseCodeTranslator.png";
+import minesweeperImage from "../assets/minesweeper.png";
+import employeeSystemImage from "../assets/employeeSystem.png";
+import postcodeAPII from "../assets/postcodeAPI.png";
 
 export const skills = [
   {
@@ -127,16 +131,24 @@ export const projects = [
     description:
       "A clothing e-shop full stack website developed in React.JS, SCSS, with Google Firestore realtime integration. The website showcases essential features such as a user-friendly shopping cart, a personalized list of favorite items, and detailed product pages providing more information about each item. ",
     techStack: ["ReactJS", "SCSS", "Google Firestore"],
-    imageLink: zadFashionIcon,
+    imageLink: zadFashionImage,
     gitHub: "https://github.com/Behzadsharafi/React-eShop",
     liveSite: "https://zadfashion.netlify.app/",
+  },
+  {
+    title: "Employee Management System",
+    description:
+      "An employee management system written in Java Spring and MySQL database for the backend, and React TypeScript for the frontend. This web app allows the user to create, read, update, and delete employee details using standard CRUD operations.",
+    techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
+    imageLink: employeeSystemImage,
+    gitHub: "https://github.com/Behzadsharafi/EmployeeCreator",
   },
   {
     title: "Zad Books",
     description:
       "A platform that enables the users to search for books by title, author, etc. By clicking on each search result a modal opens up with more information about each title. I used React.JS and SCSS for front-end and utilized google books API as the backend.",
     techStack: ["ReactJS", "SCSS", "Google Books API"],
-    imageLink: zadBooksIcon,
+    imageLink: zadBooksImage,
     gitHub: "https://github.com/Behzadsharafi/GoogleBooks",
     liveSite: "https://zadbooks.netlify.app/",
   },
@@ -146,8 +158,33 @@ export const projects = [
     description:
       "This is a simulation of Windows XP user interface to exhibit my vanilla JavaScript, HTML, and CSS abilities. There is a start menu and 3 applications that the user can choose from. My focus in this project was on the UI, therefore some buttons and icons are merely placeholders and do not have functionality.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    imageLink: windowsXPIcon,
+    imageLink: windowsXPImage,
     gitHub: "https://github.com/Behzadsharafi/FakeOS",
     liveSite: "https://fakewinxp.netlify.app/",
+  },
+  {
+    title: "Postcode API",
+    description:
+      "An API in Java that allows mobile clients to retrieve and add suburb and postcode combinations. I utilized Spring and MySQL for the backend of this project. The frontend is written in ReactJS and TypeScript .",
+    techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
+    imageLink: postcodeAPII,
+    gitHub: "https://github.com/Behzadsharafi/PostCodeAPI",
+  },
+  {
+    title: "Morse Code Translator",
+    description:
+      "Explore the world of communication through my Morse Code Translator project crafted with JavaScript, Html and CSS. This interactive web application converts text to Morse code and vice versa, providing a user-friendly experience. I utilized Jest to test the application. The user can type in english or morse code, and the app detects it automatically.",
+    techStack: ["JavaScript", "HTML", "CSS", "Jest"],
+    imageLink: morseTranslatorImage,
+    gitHub: "https://github.com/Behzadsharafi/MorseCodeTranslator",
+    liveSite: "https://zadmorse.netlify.app/",
+  },
+  {
+    title: "Minesweeper in Java",
+    description:
+      "A Minesweeper game in Java which allows the user to customize the number of mines and also the grid dimensions. In this Java game I have utilized AWT to create a graphical user interface.",
+    techStack: ["Java", "Awt"],
+    imageLink: minesweeperImage,
+    gitHub: "https://github.com/Behzadsharafi/minesweeper",
   },
 ];

@@ -55,11 +55,14 @@ const Project = ({ project, index }) => {
           ))}
         </ul>
         <ul className={styles.project__details__links}>
-          <li>
-            <a href={project.liveSite} target="_blank">
-              <i className="bx bx-link-external"></i>
-            </a>
-          </li>
+          {project.liveSite && (
+            <li>
+              <a href={project.liveSite} target="_blank">
+                <i className="bx bx-link-external"></i>
+              </a>
+            </li>
+          )}
+
           <li>
             <a href={project.gitHub} target="_blank">
               <i className="bx bxl-github"></i>
