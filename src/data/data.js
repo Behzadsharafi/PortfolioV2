@@ -22,7 +22,7 @@ import zadBooksImage from "../assets/googleBooks.png";
 import zadFashionImage from "../assets/zadFashion.png";
 import windowsXPImage from "../assets/windowsXP.png";
 import morseTranslatorImage from "../assets/morseCodeTranslator.png";
-import minesweeperImage from "../assets/minesweeper.png";
+import minesweeperImage from "../assets/mineSweeper.png";
 import employeeSystemImage from "../assets/employeeSystem.png";
 import postcodeAPII from "../assets/postcodeAPI.png";
 
