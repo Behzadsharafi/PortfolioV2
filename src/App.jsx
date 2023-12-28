@@ -1,7 +1,7 @@
-import styles from "./App.module.scss";
+import "./App.css";
 
 function App() {
-  return <div className={styles.app}>9.52</div>;
+  return <div className="app">alan</div>;
 }
 
 export default App;
