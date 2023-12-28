@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import ActiveTabContextProvider from "./context/ActiveTabContextProvider";
 import Footer from "./components/Footer/Footer";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
           </Routes>
           <Footer />
         </div>

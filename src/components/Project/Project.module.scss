@@ -1,0 +1,187 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+@use "../../partials/breakpoints";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.project {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+
+  &__odd {
+    justify-content: end;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1;
+    width: 50%;
+
+    &__odd {
+      align-items: end;
+
+      @include mixins.tablet {
+        align-items: flex-start;
+      }
+    }
+
+    @include mixins.desktop_sm {
+      width: 65%;
+    }
+
+    @include mixins.tablet {
+      padding: 40px;
+      width: 100%;
+      gap: 25px;
+    }
+
+    @include mixins.phone {
+      padding: 20px;
+    }
+
+    &__heading {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      font-size: clamp(14px, 2vw, 16px);
+
+      &__odd {
+        align-items: end;
+
+        @include mixins.tablet {
+          align-items: flex-start;
+        }
+      }
+      &__featured {
+        font-size: 13px;
+        font-weight: 400;
+        color: palette.$light-blue;
+      }
+
+      &__title {
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: palette.$light-blue;
+        }
+      }
+    }
+
+    &__description {
+      background-color: #112240;
+      border-radius: 4px;
+      padding: 20px;
+      font-family: Poppins;
+      box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.4);
+      transition: box-shadow 0.3s;
+      font-size: 14px;
+
+      &__odd {
+        text-align: end;
+
+        @include mixins.tablet {
+          text-align: start;
+        }
+      }
+
+      &:hover {
+        box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.7);
+      }
+
+      @include mixins.tablet {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+
+        &:hover {
+          box-shadow: none;
+        }
+      }
+    }
+
+    &__techStack {
+      display: flex;
+      padding: 0;
+      font-size: 13px;
+      gap: 20px;
+    }
+
+    &__links {
+      display: flex;
+      padding: 0;
+      gap: 10px;
+      font-size: 20px;
+
+      & li {
+        & a {
+          transition: color 0.3s;
+          color: palette.$white;
+
+          &:hover {
+            color: palette.$light-blue;
+          }
+        }
+      }
+    }
+  }
+
+  &__imageContainer {
+    width: 60%;
+    position: absolute;
+    border-radius: 4px;
+    right: 0;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    aspect-ratio: 3/2;
+
+    &__odd {
+      left: 0;
+    }
+
+    @include mixins.tablet {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__image {
+      cursor: pointer;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.6) hue-rotate(180deg);
+      object-position: top left;
+
+      transition: filter 0.3s ease-in-out;
+      // filter: url(#noise) hue-rotate(180deg);;4
+
+      &:hover {
+        // animation: pulse 800ms ease-in-out;
+        filter: brightness(1) hue-rotate(0deg);
+      }
+
+      @include mixins.tablet {
+        opacity: 0.3;
+        filter: brightness(1) hue-rotate(0deg);
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  from,
+  to {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+}
+
+.svg {
+  display: none;
+}
