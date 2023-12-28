@@ -1,0 +1,24 @@
+.canvas {
+  position: relative;
+  display: flex;
+}
+
+.cube {
+  position: absolute;
+  // width: 100px;
+  // height: 100px;
+  transform-origin: 50% 50% 150px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-out;
+  opacity: 0.2;
+}
+
+.cube .face {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: transparent;
+  transform: translateZ(100px);
+}
