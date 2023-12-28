@@ -123,15 +123,6 @@ export const education = [
 
 export const projects = [
   {
-    title: "Zad Books",
-    description:
-      "A platform that enables the users to search for books and get more details about a certain title. I used React.JS and SCSS for front-end and utilized google books API as the backend.",
-    techStack: ["ReactJS", "SCSS", "Google Books API"],
-    imageLink: zadBooksIcon,
-    gitHub: "https://github.com/Behzadsharafi/GoogleBooks",
-    liveSite: "https://zadbooks.netlify.app/",
-  },
-  {
     title: "Zad Fashion",
     description:
       "A clothing e-shop full stack website developed in React.JS, SCSS, with Google Firestore realtime integration. The website showcases essential features such as a user-friendly shopping cart, a personalized list of favorite items, and detailed product pages providing more information about each item. ",
@@ -140,6 +131,16 @@ export const projects = [
     gitHub: "https://github.com/Behzadsharafi/React-eShop",
     liveSite: "https://zadfashion.netlify.app/",
   },
+  {
+    title: "Zad Books",
+    description:
+      "A platform that enables the users to search for books by title, author, etc. By clicking on each search result a modal opens up with more information about each title. I used React.JS and SCSS for front-end and utilized google books API as the backend.",
+    techStack: ["ReactJS", "SCSS", "Google Books API"],
+    imageLink: zadBooksIcon,
+    gitHub: "https://github.com/Behzadsharafi/GoogleBooks",
+    liveSite: "https://zadbooks.netlify.app/",
+  },
+
   {
     title: "Fake Windows XP",
     description:
