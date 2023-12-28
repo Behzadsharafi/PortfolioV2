@@ -1,0 +1,55 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+@use "../../partials/breakpoints";
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+
+  @include mixins.phone {
+    transform: translateY(-55px);
+  }
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__heading {
+      color: palette.$light-blue;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0;
+
+      &__item {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+
+        &__icon {
+          width: 35px;
+
+          @include mixins.phone {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
