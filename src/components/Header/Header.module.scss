@@ -1,0 +1,111 @@
+@use "../../partials/palette";
+@use "../../partials/mixins";
+@use "../../partials/breakpoints";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: palette.$dark-blue;
+  color: palette.$white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1500px;
+    padding: 15px 0;
+
+    &__logo {
+      position: relative;
+      font-size: 25px;
+      color: #ededed;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &__nav {
+      display: flex;
+      gap: 40px;
+      font-size: 17px;
+      text-decoration: none;
+      font-weight: 500;
+
+      &__item {
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+          color: palette.$aquamarine;
+          font-style: italic;
+        }
+
+        &__active {
+          color: palette.$aquamarine;
+          font-style: italic;
+        }
+      }
+
+      // @include mixins.desktop_xxl {
+      //   display: none;
+      // }
+      // @include mixins.desktop_xl {
+      //   display: none;
+      // }
+
+      @include mixins.tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        opacity: 90%;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        background: palette.$dark-blue;
+        z-index: 2;
+        padding-top: 120px;
+        transition: 0.4s;
+
+        &__isActive {
+          left: 0;
+        }
+
+        &__item {
+          display: block;
+          width: 100%;
+          max-width: 200px;
+          margin: 0 auto 16px;
+          text-align: center;
+          padding: 12px 16px;
+          background-color: palette.$dark-blue2;
+          color: palette.$white;
+          text-decoration: none;
+
+          &:hover {
+            background-color: palette.$dark-blue3;
+          }
+
+          &__active {
+            color: palette.$aquamarine;
+            background-color: palette.$dark-blue2;
+          }
+        }
+      }
+    }
+  }
+}
