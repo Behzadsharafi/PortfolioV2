@@ -1,26 +1,24 @@
-// import Cube from "../../components/Cube/Cube";
-// import styles from "./Homepage.module.scss";
-// import reactIcon from "../../assets/react.svg";
-// import jsIcon from "../../assets/javascript.svg";
-// import javaIcon from "../../assets/java.svg";
-// import htmlIcon from "../../assets/html.svg";
-// import cssIcon from "../../assets/css.svg";
-// import mysqlIcon from "../../assets/mysql.svg";
-// import sassIcon from "../../assets/sass.svg";
-// import springIcon from "../../assets/spring.svg";
-// import gitIcon from "../../assets/git.svg";
-// import tsIcon from "../../assets/typescript.svg";
-// import nestjsIcon from "../../assets/nestjs.svg";
-// import nextjsIcon from "../../assets/nextjs.svg";
-// import jestIcon from "../../assets/jest.svg";
+import Cube from "../../components/Cube/Cube";
+import styles from "./Homepage.module.scss";
+import reactIcon from "../../assets/react.svg";
+import jsIcon from "../../assets/javascript.svg";
+import javaIcon from "../../assets/java.svg";
+import htmlIcon from "../../assets/html.svg";
+import cssIcon from "../../assets/css.svg";
+import mysqlIcon from "../../assets/mysql.svg";
+import sassIcon from "../../assets/sass.svg";
+import springIcon from "../../assets/spring.svg";
+import gitIcon from "../../assets/git.svg";
+import tsIcon from "../../assets/typescript.svg";
+import nestjsIcon from "../../assets/nestjs.svg";
+import nextjsIcon from "../../assets/nextjs.svg";
+import jestIcon from "../../assets/jest.svg";
 
 const HomePage = () => {
   return (
-    <main>
-      <div>
-        {/* <main className={styles.homePage}>
-      <div className={styles.homePage__content}> */}
-        {/* <h1 className={styles.homePage__content__heading}>
+    <main className={styles.homePage}>
+      <div className={styles.homePage__content}>
+        <h1 className={styles.homePage__content__heading}>
           Hello there! <br />
         </h1>
         <p className={styles.homePage__content__para1}>
@@ -89,7 +87,7 @@ const HomePage = () => {
           initialRotation={240}
           rotationSpeed={-0.2}
         />
-        <Cube bottom={0.1} left={0.05} icon={jestIcon} initialRotation={270} /> */}
+        <Cube bottom={0.1} left={0.05} icon={jestIcon} initialRotation={270} />
       </div>
     </main>
   );
