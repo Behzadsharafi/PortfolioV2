@@ -1,0 +1,34 @@
+@use "./partials/palette";
+
+* {
+  font-family: Poppins;
+  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: palette.$dark-blue;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #485670 palette.$dark-blue;
+
+  &::-webkit-scrollbar {
+    width: 7px;
+
+    &-thumb {
+      background-color: #485670;
+      border-radius: 5px;
+    }
+
+    &-track {
+      background-color: palette.$dark-blue;
+
+      &:hover {
+        background-color: none;
+      }
+    }
+  }
+}
