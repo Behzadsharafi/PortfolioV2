@@ -1,5 +1,5 @@
 import Cube from "../../components/Cube/Cube";
-import styles from "./Homepage.module.scss";
+import styles from "./HomePage.module.scss";
 import reactIcon from "../../assets/react.svg";
 import jsIcon from "../../assets/javascript.svg";
 import javaIcon from "../../assets/java.svg";
