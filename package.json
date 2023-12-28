@@ -1,5 +1,5 @@
 {
-  "name": "portf",
+  "name": "test",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,18 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.1",
-    "@fortawesome/free-regular-svg-icons": "^6.5.1",
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "@hookform/resolvers": "^3.3.3",
-    "firebase": "^10.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-hook-form": "^7.49.2",
-    "react-router-dom": "^6.21.0",
-    "zod": "^3.22.4"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
@@ -31,7 +21,6 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.68.0",
     "vite": "^5.0.8"
   }
 }

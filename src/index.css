@@ -1,51 +1,19 @@
-@use "./partials/palette";
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 
-* {
-  font-family: Poppins;
-  list-style: none;
-  margin: 0;
-  box-sizing: border-box;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  background: palette.$dark-blue;
-}
-
-html {
-  scrollbar-width: thin;
-  scrollbar-color: #485670 palette.$dark-blue;
-
-  &::-webkit-scrollbar {
-    width: 7px;
-
-    &-thumb {
-      background-color: #485670;
-      border-radius: 5px;
-    }
-
-    &-track {
-      background-color: palette.$dark-blue;
-
-      &:hover {
-        background-color: none;
-      }
-    }
-  }
-}
-
-// html::-webkit-scrollbar {
-// }
-
-html::-webkit-scrollbar-thumb {
-}
-
-html::-webkit-scrollbar-track {
-}
-
-html::-webkit-scrollbar-track:hover {
-}
-
-/* a {
+a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
@@ -97,4 +65,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}
