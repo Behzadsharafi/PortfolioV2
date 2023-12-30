@@ -5,14 +5,14 @@
 <h1>My Portfolio Website</h1>
 <p>This is my portfolio website written in ReactJS, SCSS, and Google Firebase. I have put some of my latest projects here. This website enables the user to directly send me a message using the contact form  </p>
 
-<h4> <a href=https://zadsharafi.netlify.app/>View Demo</a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Request Feature </a> </h4>
+<h4> <a href=https://zadsharafi.netlify.app/>View Live Site</a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Request Feature </a> </h4>
 
 </div>
 
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  - [Quick Demo](#camera-screenshots)
+  - [Quick Demo](#camera-quick-demo)
   - [Features](#dart-features)
   - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
@@ -74,7 +74,7 @@ Start the server
 
 Contributions are always welcome!
 
-see `contributing.md` for ways to get started
+see [Contributing](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CONTRIBUTING.md) for ways to get started
 
 ### :scroll: Code of Conduct
 
