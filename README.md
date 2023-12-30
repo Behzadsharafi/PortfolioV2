@@ -1,9 +1,9 @@
 <div align='center'>
 
-<img src="/src/assets/portfolio.gif" alt="logo" width=70% height=auto />
+<img src="/src/assets/banner.png" alt="logo" width=100% height=auto />
 
 <h1>My Portfolio Website</h1>
-<p>This is my portfolio website written in ReactJS, SCSS, and Google Firebase. I have put some of my latest projects here. This website enables the user to directly send me a message using the </p>
+<p>This is my portfolio website written in ReactJS, SCSS, and Google Firebase. I have put some of my latest projects here. This website enables the user to directly send me a message using the contact form  </p>
 
 <h4> <a href=https://zadsharafi.netlify.app/>View Demo</a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Request Feature </a> </h4>
 
@@ -19,8 +19,7 @@
 
 ### :camera: Screenshots
 
-<div align="center"> <a href="https://zadsharafi.netlify.app/"><img src="https://ibb.co/RhMgwDM" alt='image' width='800'/></a> </div>
-<div align="center"> <a href="https://zadsharafi.netlify.app/"><img src="https://ibb.co/RhMgwDM" alt='image' width='800'/></a> </div>
+<div align="center"> <a href="https://zadsharafi.netlify.app/"><img src="/src/assets/portfolio.gif" alt='image' width='800'/></a> </div>
 
 ### :dart: Features
 
@@ -35,18 +34,32 @@ To run this project, you will need to add the following environment variables to
 
 ## :toolbox: Getting Started
 
-### :bangbang: Prerequisites
+### :running: Run Locally
 
-- Clone the repository
+Clone the project
 
 ```bash
-git clone git@github.com:your-username/React-eShop.git
+  git clone git@github.com:Behzadsharafi/PortfolioV2.git
 ```
 
-- Navigate to the project folder:
+Go to the project directory
 
 ```bash
-cd portfoliov2
+  cd PortfolioV2
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
 ```
 
 ## :warning: License
@@ -58,3 +71,4 @@ Distributed under the no License. See LICENSE.txt for more information.
 Zad Sharafi - [@twitter_handle](behzadsharafi) - behzadsharafi@gmail.com
 
 Project Link: [https://github.com/Behzadsharafi/PortfolioV2](https://github.com/Behzadsharafi/PortfolioV2)
+```
