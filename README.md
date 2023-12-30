@@ -86,6 +86,6 @@ Distributed under the MIT License. See [License](https://github.com/Behzadsharaf
 
 ## :handshake: Contact
 
-Zad Sharafi - behzadsharafi@gmail.com
+Email: behzadsharafi@gmail.com
 
 Linkedin: [https://www.linkedin.com/in/zadsharafi/](https://www.linkedin.com/in/zadsharafi/)
