@@ -77,8 +77,10 @@ Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/b
 ## :computer: Built With
 
 - [React Js](https://react.dev/)
-- [SASS](https://sass-lang.com/): for styling
-- [Google Firebase](https://firebase.google.com/): for database
+- [SASS](https://sass-lang.com/): styling
+- [Google Firebase](https://firebase.google.com/): database
+- [React Hook Form](https://react-hook-form.com/): contact form
+- [Zod](https://zod.dev/): form validation
 
 ## :warning: License
 
