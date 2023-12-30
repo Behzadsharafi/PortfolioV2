@@ -68,11 +68,11 @@ Start the server
 
 Contributions are always welcome!
 
-see [Contributing](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CONTRIBUTING.md) for ways to get started
+See [Contributing](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CONTRIBUTING.md) for ways to get started.
 
 ### :scroll: Code of Conduct
 
-Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CODE_OF_CONDUCT.md)
+Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CODE_OF_CONDUCT.md).
 
 ## :computer: Built With
 
