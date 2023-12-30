@@ -19,8 +19,11 @@
   - [Run Locally](#running-run-locally)
 - [Contributing](#wave-contributing)
   - [Code of Conduct](#scroll-code-of-conduct)
+  - [Built With](#scroll-built-with)
 - [License](#warning-license)
 - [Contact](#handshake-contact)
+
+## 💻 Built with
 
 ## :star2: About the Project
 
@@ -78,6 +81,12 @@ see `contributing.md` for ways to get started
 ### :scroll: Code of Conduct
 
 Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CODE_OF_CONDUCT.md)
+
+## :scroll: Built With
+
+- [React Js](https://react.dev/)
+- [SASS](https://sass-lang.com/): for styling
+- [Google Firebase](https://firebase.google.com/): for database
 
 ## :warning: License
 
