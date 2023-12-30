@@ -24,7 +24,8 @@ import windowsXPImage from "../assets/windowsXP.png";
 import morseTranslatorImage from "../assets/morseCodeTranslator.png";
 import minesweeperImage from "../assets/mineSweeper.png";
 import employeeSystemImage from "../assets/employeeSystem.png";
-import postcodeAPII from "../assets/postcodeAPI.png";
+import postcodeAPIImage from "../assets/postcodeAPI.png";
+import portfolioImage from "../assets/portfolio.png";
 
 export const skills = [
   {
@@ -167,7 +168,7 @@ export const projects = [
     description:
       "An API in Java that allows mobile clients to retrieve and add suburb and postcode combinations. I utilized Spring and MySQL for the backend of this project. The frontend is written in ReactJS and TypeScript .",
     techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
-    imageLink: postcodeAPII,
+    imageLink: postcodeAPIImage,
     gitHub: "https://github.com/Behzadsharafi/PostCodeAPI",
   },
   {
@@ -186,5 +187,14 @@ export const projects = [
     techStack: ["Java", "Awt"],
     imageLink: minesweeperImage,
     gitHub: "https://github.com/Behzadsharafi/minesweeper",
+  },
+  {
+    title: "Portfolio Website",
+    description:
+      "My portfolio website written in ReactJS, SCSS, and Google Firebase. I have put some of my latest projects here. This website enables the user to directly send me a message using the contact form.",
+    techStack: ["ReactJS", "SCSS", "Google Firebase"],
+    imageLink: portfolioImage,
+    gitHub: "https://github.com/Behzadsharafi/PortfolioV2",
+    liveSite: "https://zadsharafi.netlify.app/",
   },
 ];
