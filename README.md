@@ -19,7 +19,7 @@
   - [Run Locally](#running-run-locally)
 - [Contributing](#wave-contributing)
   - [Code of Conduct](#scroll-code-of-conduct)
-  - [Built With](#💻-built-with)
+  - [Built With](#built-with)
 - [License](#warning-license)
 - [Contact](#handshake-contact)
 
@@ -82,7 +82,7 @@ see `contributing.md` for ways to get started
 
 Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CODE_OF_CONDUCT.md)
 
-## 💻 Built with
+## 💻 Built With
 
 - [React Js](https://react.dev/)
 - [SASS](https://sass-lang.com/): for styling
