@@ -37,7 +37,7 @@ Please note that all code contributions must be licensed under the same license 
 
 ### Code of Conduct
 
-We expect all contributors to follow our \***\*Code of Conduct\*\***. Please read it carefully before contributing.
+We expect all contributors to follow our [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CODE_OF_CONDUCT.md). Please read it carefully before contributing.
 
 ### Conclusion
 
