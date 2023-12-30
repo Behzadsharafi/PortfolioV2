@@ -156,7 +156,6 @@
       object-fit: cover;
       filter: brightness(0.6) hue-rotate(180deg);
       object-position: top left;
-
       transition: filter 0.3s ease-in-out;
       // filter: url(#noise) hue-rotate(180deg);;4
 
@@ -168,6 +167,7 @@
       @include mixins.tablet {
         opacity: 0.3;
         filter: brightness(1) hue-rotate(0deg);
+        object-position: top center;
       }
     }
   }
