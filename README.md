@@ -82,7 +82,7 @@ Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/b
 
 ## :warning: License
 
-Distributed under the MIT License. See LICENSE.txt for more information.
+Distributed under the MIT License. See [License](https://github.com/Behzadsharafi/PortfolioV2/blob/master/LICENSE.txt) for more information.
 
 ## :handshake: Contact
 
