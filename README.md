@@ -12,7 +12,7 @@
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  - [Screenshots](#camera-screenshots)
+  - [Quick Demo](#camera-screenshots)
   - [Features](#dart-features)
   - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
@@ -24,7 +24,7 @@
 
 ## :star2: About the Project
 
-### :camera: Screenshots
+### :camera: Quick Demo
 
 <div align="center"> <a href="https://zadsharafi.netlify.app/"><img src="/src/assets/portfolio.gif" alt='image' width='800'/></a> </div>
 
@@ -66,6 +66,18 @@ Start the server
 ```bash
   npm run dev
 ```
+
+## :wave: Contributing
+
+<a href="https://github.com/Behzadsharafi/PortfolioV2/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> </a>
+
+Contributions are always welcome!
+
+see `contributing.md` for ways to get started
+
+### :scroll: Code of Conduct
+
+Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/blob/master/CODE_OF_CONDUCT.md)
 
 ## :warning: License
 
