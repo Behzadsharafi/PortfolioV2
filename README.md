@@ -1,6 +1,6 @@
 <div align='center'>
 
-<img src="/src/assets/banner.png" alt="logo" width=auto height=200px />
+<img src="/src/assets/banner.png" alt="logo" width=50% height=auto />
 
 <h1>My Portfolio Website</h1>
 <p>This is my portfolio website written in ReactJS, SCSS, and Google Firebase. I have put some of my latest projects here. This website enables the user to directly send me a message using the contact form  </p>
