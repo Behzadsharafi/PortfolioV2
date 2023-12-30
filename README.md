@@ -14,7 +14,6 @@
 - [About the Project](#star2-about-the-project)
   - [Quick Demo](#camera-quick-demo)
   - [Features](#dart-features)
-  - [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
   - [Run Locally](#running-run-locally)
 - [Contributing](#wave-contributing)
@@ -34,11 +33,6 @@
 - Mobile-Responsive
 - User-Friendly
 - Modular Code
-
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-`VITE_FIRESTORE_API=AIzaSyBs6a0635566nHyEq6FtfqiSubZIeyGZMM`
 
 ## :toolbox: Getting Started
 
