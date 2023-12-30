@@ -88,4 +88,4 @@ Distributed under the MIT License. See [License](https://github.com/Behzadsharaf
 
 Zad Sharafi - behzadsharafi@gmail.com
 
-Project Link: [https://github.com/Behzadsharafi/PortfolioV2](https://github.com/Behzadsharafi/PortfolioV2)
+Linkedin: [https://www.linkedin.com/in/zadsharafi/](https://www.linkedin.com/in/zadsharafi/)
