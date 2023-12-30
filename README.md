@@ -23,8 +23,6 @@
 - [License](#warning-license)
 - [Contact](#handshake-contact)
 
-## 💻 Built with
-
 ## :star2: About the Project
 
 ### :camera: Quick Demo
