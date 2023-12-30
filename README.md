@@ -5,7 +5,7 @@
 <h1>My Portfolio Website</h1>
 <p>This is my portfolio website written in ReactJS, SCSS, and Google Firebase. I have put some of my latest projects here. This website enables the user to directly send me a message using the contact form  </p>
 
-<h4> <a href=https://zadsharafi.netlify.app/>View Live Site</a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Request Feature </a> </h4>
+<h4> <a href=https://zadsharafi.netlify.app/>View Live Site</a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Report a Bug </a> <span> · </span> <a href="https://github.com/Behzadsharafi/PortfolioV2/issues"> Request a Feature </a> </h4>
 
 </div>
 
