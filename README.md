@@ -60,15 +60,12 @@ Start the server
   npm run dev
 ```
 
-```
-
 ## :warning: License
 
-Distributed under the no License. See LICENSE.txt for more information.
+Distributed under the MIT License. See LICENSE.txt for more information.
 
 ## :handshake: Contact
 
-Zad Sharafi - [@twitter_handle](behzadsharafi) - behzadsharafi@gmail.com
+Zad Sharafi - behzadsharafi@gmail.com
 
 Project Link: [https://github.com/Behzadsharafi/PortfolioV2](https://github.com/Behzadsharafi/PortfolioV2)
-```
