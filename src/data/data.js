@@ -169,7 +169,7 @@ export const projects = [
       "An API in Java that allows mobile clients to retrieve and add suburb and postcode combinations. I utilized Spring and MySQL for the backend of this project. The frontend is written in ReactJS and TypeScript .",
     techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
     imageLink: postcodeAPIImage,
-    gitHub: "https://github.com/Behzadsharafi/PostCodeAPI",
+    gitHub: "https://github.com/Behzadsharafi/PostcodeFrontend",
   },
   {
     title: "Morse Code Translator",
