@@ -1,3 +1,6 @@
+[![Tests Passing](https://github.com/Behzadsharafi/PortfolioV2/actions/workflows/Test.yml/badge.svg)](https://github.com/Behzadsharafi/PortfolioV2/actions/workflows/Test.yml)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Behzadsharafi/PortfolioV2/blob/main/LICENSE)
+
 <div align='center'>
 
 <img src="/src/assets/banner.png" alt="logo" width=50% height=auto />
