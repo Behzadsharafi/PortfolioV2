@@ -1,4 +1,4 @@
-[![Tests Passing](https://github.com/Behzadsharafi/PortfolioV2/actions/workflows/Test.yml/badge.svg)](https://github.com/Behzadsharafi/PortfolioV2/actions/workflows/Test.yml)
+[![Tests Passing](https://github.com/Behzadsharafi/PortfolioV2/actions/workflows/test.yml/badge.svg)](https://github.com/Behzadsharafi/PortfolioV2/actions/workflows/test.yml)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Behzadsharafi/PortfolioV2/blob/main/LICENSE)
 
 <div align='center'>
