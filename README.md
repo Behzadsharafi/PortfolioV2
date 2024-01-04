@@ -84,6 +84,7 @@ Please read the [Code of Conduct](https://github.com/Behzadsharafi/PortfolioV2/b
 - [Google Firebase](https://firebase.google.com/): database
 - [React Hook Form](https://react-hook-form.com/): contact form
 - [Zod](https://zod.dev/): form validation
+- [Vitest](https://vitest.dev/): testing
 
 ## :warning: License
 
