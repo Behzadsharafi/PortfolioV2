@@ -170,6 +170,7 @@ export const projects = [
     techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
     imageLink: postcodeAPIImage,
     gitHub: "https://github.com/Behzadsharafi/PostcodeFrontend",
+    liveSite: "https://postcodeapi.netlify.app/",
   },
   {
     title: "Morse Code Translator",
