@@ -13,6 +13,8 @@ import awsIcon from "../assets/aws.svg";
 import jestIcon from "../assets/jest.svg";
 import jUnitIcon from "../assets/jUnit.svg";
 import reactTestIcon from "../assets/reactTestingLibrary.svg";
+import nextJSIcon from "../assets/nextjs.svg";
+import tailwindcssIcon from "../assets/tailwindcss.svg";
 import gitIcon from "../assets/git.svg";
 import githubIcon from "../assets/github.svg";
 import nologyIcon from "../assets/_nology.png";
@@ -32,16 +34,18 @@ export const skills = [
     label: "Languages",
     technologies: [
       { title: "JavaScript", icon: jsIcon },
-      { title: "HTML", icon: htmlIcon },
-      { title: "CSS", icon: cssIcon },
       { title: "TypeScript", icon: tsIcon },
       { title: "Java", icon: javaIcon },
+      { title: "HTML", icon: htmlIcon },
+      { title: "CSS", icon: cssIcon },
     ],
   },
   {
     label: "Frontend",
     technologies: [
-      { title: "ReactJS", icon: reactIcon },
+      { title: "React", icon: reactIcon },
+      { title: "Next.js", icon: nextJSIcon },
+      { title: "Tailwind CSS", icon: tailwindcssIcon },
       { title: "Sass", icon: sassIcon },
     ],
   },
@@ -96,6 +100,7 @@ export const experiences = [
       "HTML",
       "CSS",
       "SCSS",
+      "Tailwind CSS",
     ],
   },
   {
