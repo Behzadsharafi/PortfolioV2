@@ -143,6 +143,7 @@ export const projects = [
     techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
     imageLink: employeeSystemImage,
     gitHub: "https://github.com/Behzadsharafi/EmployeeCreator",
+    liveSite: "https://zademployee.netlify.app/",
   },
   {
     title: "Zad Books",
