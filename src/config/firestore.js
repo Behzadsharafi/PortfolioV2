@@ -8,7 +8,7 @@ const apiKey = import.meta.env.VITE_FIRESTORE_API;
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: (VITE_FIRESTORE_API = AIzaSyBs6a0635566nHyEq6FtfqiSubZIeyGZMM),
+  apiKey: "AIzaSyBs6a0635566nHyEq6FtfqiSubZIeyGZMM",
   authDomain: "portfolio-bbcfc.firebaseapp.com",
   projectId: "portfolio-bbcfc",
   storageBucket: "portfolio-bbcfc.appspot.com",
