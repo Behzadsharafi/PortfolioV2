@@ -15,6 +15,7 @@ import jUnitIcon from "../assets/jUnit.svg";
 import reactTestIcon from "../assets/reactTestingLibrary.svg";
 import nextJSIcon from "../assets/nextjs.svg";
 import tailwindcssIcon from "../assets/tailwindcss.svg";
+import digitalOceanIcon from "../assets/digitalOcean.svg";
 import gitIcon from "../assets/git.svg";
 import githubIcon from "../assets/github.svg";
 import nologyIcon from "../assets/_nology.png";
@@ -63,6 +64,7 @@ export const skills = [
       { title: "MySQL", icon: mysqlIcon },
       { title: "Firebase", icon: firebaseIcon },
       { title: "Amazon Web Services", icon: awsIcon },
+      { title: "Digital Ocean", icon: digitalOceanIcon },
     ],
   },
   {
