@@ -28,6 +28,7 @@ import minesweeperImage from "../assets/mineSweeper.png";
 import employeeSystemImage from "../assets/employeeSystem.png";
 import postcodeAPIImage from "../assets/postcodeAPI.png";
 import portfolioImage from "../assets/portfolio.png";
+import eventsCalendarImage from "../assets/eventsCalendar.png";
 
 export const skills = [
   {
@@ -132,6 +133,23 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    title: "Events Calendar",
+    description:
+      "A full-stack calendar app that allows the user to create and manage events in a calendar. The backend is in Spring Boot, and MySQL, and the frontend is in Next.js, Tailwind and TypeScript.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Spring",
+      "Java",
+      "JUnit",
+    ],
+    imageLink: eventsCalendarImage,
+    gitHub: "https://github.com/Behzadsharafi/EventsCalendar",
+    liveSite: "https://events-calendar-five.vercel.app/",
+  },
   {
     title: "Zad Fashion",
     description:
