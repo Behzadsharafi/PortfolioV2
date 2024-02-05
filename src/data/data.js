@@ -107,10 +107,10 @@ export const experiences = [
     ],
   },
   {
-    duration: "2022-2023",
+    duration: "2021-2023",
     company: "Digikala",
     description:
-      "During my time at Digikala my tasks included maintaining and upgrading front end of the website codes mostly in JavaScript, HTML, and CSS. Working on responsiveness of the website, collaborating with in-house web designers to improve UI design and translated user requirements into implementation plans, and also fixing the bugs and issues along the way.",
+      "During my time at Digikala my tasks included maintaining and upgrading frontend and backend of the website codes mostly in JavaScript, HTML, and CSS, and React and Java. Working on responsiveness of the website, collaborating with in-house web designers to improve UI design and translating user requirements into implementation plans, and also writing unit tests and fixing the bugs and issues along the way. ",
     icon: digiKalaIcon,
     link: "https://www.digikala.com/",
     tags: ["JavaScript", "HTML", "CSS", "ReactJS"],
