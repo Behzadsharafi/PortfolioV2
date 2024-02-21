@@ -30,6 +30,7 @@ import employeeSystemImage from "../assets/employeeSystem.png";
 import postcodeAPIImage from "../assets/postcodeAPI.png";
 import portfolioImage from "../assets/portfolio.png";
 import eventsCalendarImage from "../assets/eventsCalendar.png";
+import pokemonAPIImage from "../assets/pokemonAPI.png";
 
 export const skills = [
   {
@@ -135,6 +136,15 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    title: "Pokemon API",
+    description:
+      "A full-stack Pokemon application with standard CRUD operations. The backend is in Nest TypeScript and MySQL, and the frontend is in React TypeScript.",
+    techStack: ["React", "Nest", "TypeScript", "SCSS", "Jest"],
+    imageLink: pokemonAPIImage,
+    gitHub: "https://github.com/Behzadsharafi/Pokemon",
+    liveSite: "https://zadpokemon.netlify.app/",
+  },
   {
     title: "Events Calendar",
     description:
