@@ -143,7 +143,6 @@ export const projects = [
     techStack: ["React", "Nest", "TypeScript", "SCSS", "Jest"],
     imageLink: pokemonAPIImage,
     gitHub: "https://github.com/Behzadsharafi/Pokemon",
-    liveSite: "https://zadpokemon.netlify.app/",
   },
   {
     title: "Events Calendar",
@@ -160,7 +159,6 @@ export const projects = [
     ],
     imageLink: eventsCalendarImage,
     gitHub: "https://github.com/Behzadsharafi/EventsCalendar",
-    liveSite: "https://events-calendar-five.vercel.app/",
   },
   {
     title: "Zad Fashion",
@@ -178,7 +176,6 @@ export const projects = [
     techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
     imageLink: employeeSystemImage,
     gitHub: "https://github.com/Behzadsharafi/EmployeeCreator",
-    liveSite: "https://zademployee.netlify.app/",
   },
   {
     title: "Zad Books",
@@ -206,7 +203,6 @@ export const projects = [
     techStack: ["Spring", "Java", "JUnit", "ReactJS", "TypeScript", "SCSS"],
     imageLink: postcodeAPIImage,
     gitHub: "https://github.com/Behzadsharafi/PostcodeFrontend",
-    liveSite: "https://postcodeapi.netlify.app/",
   },
   {
     title: "Morse Code Translator",
